@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0; 
+}
+body{
+    background-color: lightsteelblue;
+}
+
+nav{
+    background: #466d6d;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:black;
+    font-size:35px;
+    line-height: 80px;
+    margin-left:2%;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height:80px;
+margin-right: 0;
+}
+nav ul li a{
+color:white;
+font-size: 17px;
+padding: 7px 13px;
+border-radius:3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+background:rgb(159, 81, 161);
+transition:.5s;
+}
+img{
+   height:100%;
+   width:100%;
+}
+h1{
+    font-family: 'Lobster' ;
+    text-align: center;
+    
+    }
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.image {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  .top-right{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: -1500%;
+    right: -100%;
+  }
+  h3{
+    font-family: 'Lobster' ;
+  }
+  .column{
+    float:left;
+    width:32.9%;
+    padding:15px;
+    background-color: powderblue;
+    margin-right: 5px;
+    
+}
+.row{
+    margin:0 -5px;
+    background-color: powderblue;
+}
+.card{
+    background-color: powderblue;
+}
+.contact-me{
+     margin-bottom: 60px;
+}
+h2{
+    text-align: center;
+}
+form{
+    background-color: lightsteelblue;
+    text-align: center;
+    color:midnightblue;
+}
+.feedback{
+    background-color: lightgreen;
+    margin-left: 2px;
+    padding:20px;
+    color:darkgreen;
+}
+textarea{
+    margin-left:25%;
+}
+footer{
+    background-color: #466d6d;
+    color: white;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1 .gen{
+    color:midnightblue;
+    font-size: 4rem;
+    font-family: 'lobster';
+    text-align: center;
+    line-height: 100vh;
+
+}
+.gen1{
+    color: midnightblue;
+    font-size: 2rem;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-family: 'lobster';
+}
+label{
+    margin-left: 40%;
+}
+ span{
+     opacity: 0;
+     transition: all 2 ease;
+     transform: translateY(50px);
+     display:inline-block;
+ }
+ span.fade{
+     opacity: 1;
+     transform: translateY(0px);
+
+ }

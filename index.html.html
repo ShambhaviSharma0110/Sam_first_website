@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam</title>
+    <script src="https://kit.fontawesome.com/b33a019973.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="p2.css">
+</head>
+<script type="text/javascript">
+    function validate()
+{
+    var username= document.getElementsByClassName("field-name");
+    var email= document.getElementsByClassName("field-email");
+    var password= document.getElementsByClassName("field-password");
+
+    if(username.value =="" || email.value =="")
+    {
+        alert("No blank values allowed!");
+        return false;
+    }
+    else{
+        true;
+          
+    }
+}
+</script>
+<body>
+    <nav>
+        <label class="logo"><em><strong>Shambhavi </strong></em>&#128540; </label>
+        <ul>
+            <li><a href="active">home</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact me</a></li> 
+        </ul>
+    </nav>
+    <div class="image">
+           <img src="https://static-2.gumroad.com/res/gumroad/1211634803146/asset_previews/fbcb47d986ad24c8fa0196199de61609/retina/drawing-woman-colour-export-v0.1.png " alt="muffin">
+            <div class="top-right">
+                 <h1> Hi! I'm Shambhavi.</h1>
+                 <p>a front-end web developer.</p> 
+                   
+            </div>
+    </div>
+    <div class= "gen1">
+        <h1 class= "gen">Wanna see something cool?</h1>
+        </div>
+    <div class="row"> 
+        <h2>Portfolio</h2>   
+         <div class="column">
+            <div class="card">
+                <img src="https://static-2.gumroad.com/res/gumroad/1211634803146/asset_previews/7f49369d84e68eca72517dad81dcc052/retina/app-user-colour-thumbnail.png " alt="meh" id="one">
+                <p>Hi! this is random text!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus cum voluptate quibusdam ullam repellendus sequi facere? </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="https://static-2.gumroad.com/res/gumroad/1211634803146/asset_previews/7f49369d84e68eca72517dad81dcc052/retina/app-user-colour-thumbnail.png " alt="meh" id="one">
+                <p>Hi! this is random text!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus cum voluptate quibusdam ullam repellendus sequi facere?</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="https://static-2.gumroad.com/res/gumroad/1211634803146/asset_previews/7f49369d84e68eca72517dad81dcc052/retina/app-user-colour-thumbnail.png " alt="meh" id="one">
+                <p>Hi! this is random text! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus cum voluptate quibusdam ullam repellendus sequi facere?</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-me">
+      <form onsubmit="validate()"  action="p2-form.html">
+        <h2>Connect with us!</h2>
+           <div class="field name">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required/>
+              <i class="fas fa-arrow-down"></i>
+           </div>
+           <div class="field-email">
+              <i class="fas fa-envelope"></i>  
+              <input type="email" placeholder="Email" required/>
+              <i class="fas fa-arrow-down"></i>
+           </div>
+            <div class="field-password">
+                   <i class="fas fa-key"></i>
+                   <input type="password" placeholder="Password" required/>
+                   <i class="fas fa-arrow-down"></i>
+            </div>
+            <button onclick="validate()" type="submit">Submit</button>
+            <div class="field-finish">
+                <i class="fas fa-heart"></i>
+                <p>Thank-you!</p>
+                <i class="fas fa-heart"></i>
+            </div>
+     </form>
+   </div>
+    <div class="feedback">
+        <h2>Hey! Please drop in your suggestions here!</h2>
+        <textarea name="fb" id="fb" cols="90" rows="10"></textarea>
+    </div>
+    
+    <footer>
+        <p>Hi! This is a mock website created using html,css and a little bit of javascript!</p>
+    </footer>
+    <script>
+        let getRandomNumber = function(start, range) {
+         
+        let getRandomNumber = Math.floor((Math.random()* range) + start);
+        return getRandomNumber;
+        }
+        console.log(getRandomNumber());
+
+    </script>
+     <script src="p2.js"></script>
+</body>
+</html>
